@@ -5,6 +5,7 @@ export default function Home() {
     <div>
       MyPortfolio
       HTML
+    NWXT.js
     </div>
   );
 }
