@@ -18,8 +18,8 @@ export default function Header() {
             <div className={headertyles.logo}>
                 MyPortfolio
             </div>
-            <Link href="#" className="menu-icon">
-                <FontAwesomeIcon icon={faBars} />
+            <Link href="#" >
+                <FontAwesomeIcon icon={faBars} className={headertyles.menuIcon}/>
             </Link>
             <div className={headertyles.navbar}>
                 
