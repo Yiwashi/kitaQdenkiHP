@@ -39,6 +39,7 @@
 
 .productitem2 {
     display:flex;
+    flex-direction: row-reverse;
     padding: 20px;
     border-radius: 5px;
     text-align: center;
@@ -184,56 +185,46 @@
 
 @media (max-width: 1400px) {   
 
-    .product-item img{
+    .productimg{
         width: 30%;
         object-fit:contain;
     }
     
-    .product-item2 img{
-        width: 30%;
-        object-fit:contain;
-    }
-
-    .product-item3 img{
-        width: 30%;
-        object-fit:contain;
-    }
-
-    .product-text{
+    .producttext{
         margin: 0 5%;
         width: 60%;
     }
     
-    .product-kozin{
+    .productkozin{
         line-height:50px;
         font-size: 1.5rem;
         height: 50px;
         width: 150px;
     }
-    .product-team{
+    .productteam{
         line-height:50px;
         font-size: 1.5rem;
         height: 50px;
         width: 150px;
     }
-    .product-type{
+    .producttype{
         margin-left: 5%;
         font-size: 1.2rem;
     }
-    .product-award{
+    .productaward{
         margin-left: 5%;
         font-size: 1rem;
     }
-    .product-title{
+    .producttitle{
         font-size: 2.5rem;
         margin-top: 60px;        
     }
 
-    .product-coment{
+    .productcoment{
         margin-top: 20px;
         font-size: 2rem;
     }
-    .product-skil{
+    .productskil{
         margin-top: 10px;
         font-size: 1.5rem;
     }
@@ -242,55 +233,46 @@
 }
 
 @media (max-width: 1000px) {
-    .product-item img{
+    .productimg{
         width: 40%;
         object-fit:contain;
     }
     
-    .product-item2 img{
-        width: 40%;
-        object-fit:contain;
-    }
-    .product-item3 img{
-        width: 40%;
-        object-fit:contain;
-    }
-
-    .product-text{
+    .producttext{
         margin: 0 1%;
         width: 65%;
     }
     
-    .product-kozin{
+    .productkozin{
         line-height:50px;/*縦中央揃えにするならheightと同じ値にする*/
         font-size: 1rem;
         height: 50px;
         width: 80px;
     }
-    .product-team{
+    .productteam{
         line-height:50px;/*縦中央揃えにするならheightと同じ値にする*/
         font-size: 1rem;
         height: 50px;
         width: 100px;
     }
-    .product-type{
+    .producttype{
         margin-left: 4%;
         font-size: 1rem;
     }
-    .product-award{
+    .productaward{
         margin-left: 5%;
         font-size: 0.75rem;
     }
-    .product-title{
+    .producttitle{
         font-size: 1.5rem;
         margin-top: 60px;        
     }
 
-    .product-coment{
+    .productcoment{
         margin-top: 20px;
         font-size: 1rem;
     }
-    .product-skil{
+    .productskil{
         margin-top: 10px;
         font-size: 0.75rem;
     }
@@ -299,14 +281,14 @@
 
 
 @media (max-width: 670px) {
-    .product-grid{
+    .productgrid{
         display: flex;
         flex-direction: column;
         width: 100%;
         align-items: center;
         justify-content: center;
     }
-    .product-item {
+    .productitem {
         padding: 0;
         display:flex;
         flex-direction: column;
@@ -315,7 +297,7 @@
         font-family: 'Zen';
         width: 90%;
     }
-    .product-item2 {
+    .productitem2 {
         display:flex;
         flex-direction:column-reverse;
         align-items: center;
@@ -324,7 +306,7 @@
         width: 100%;
     }
 
-    .product-item3 {
+    .productitem3 {
         display:flex;
         flex-direction:column;
         align-items: center;
@@ -333,61 +315,50 @@
         width: 100%;
     }
 
-    .product-item img{
-        width: 80%;
-        object-fit:contain;
-    }
-    
-    .product-item2 img{
-        width: 80%;
-        object-fit:contain;
-    }
-
-    .product-item3 img{
+    .productimg{
         width: 80%;
         object-fit:contain;
     }
 
 
-
-    .product-icons{
+    .producticons{
         display: flex;
         justify-content: space-between;
     }
 
-    .product-text{
+    .producttext{
         margin: 10% 0%;
         width: 100%;
     }
     
-    .product-kozin{
+    .productkozin{
         line-height:20px;/*縦中央揃えにするならheightと同じ値にする*/
         font-size: 0.6rem;
         height: 20px;
         width: 80px;
     }
-    .product-team{
+    .productteam{
         line-height:20px;/*縦中央揃えにするならheightと同じ値にする*/
         font-size: 0.6rem;
         height: 20px;
         width: 80px;
     }
-    .product-type{
+    .producttype{
         font-size: 0.8rem;
     }
-    .product-award{
+    .productaward{
         font-size: 0.5rem;
     }
-    .product-title{
+    .producttitle{
         font-size: 1rem;
         margin-top: 60px;        
     }
 
-    .product-coment{
+    .productcoment{
         margin-top: 20px;
         font-size: 0.8rem;
     }
-    .product-skil{
+    .productskil{
         margin-top: 10px;
         font-size: 0.5rem;
     }
