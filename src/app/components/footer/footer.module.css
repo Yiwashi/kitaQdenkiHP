@@ -1,0 +1,51 @@
+.footercircle {
+    height:200px;
+    border-radius:800px ;
+    background: #e1cabba4;
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    align-items:center;
+  }
+
+.footertext{
+    width:60%;   
+}
+.footermain{
+    font-family:'Zen';
+    font-size:2rem;
+    border-bottom:2px solid rgba(114, 103, 96, 0.64);
+}
+.footermain{
+    font-family:'Zen';
+    font-size:1rem;
+}
+.footermain2{
+    font-family:'Zen';
+    display:flex;
+    gap:100px;
+    flex-direction:row;
+    hight:300px;
+    text-align: center;
+    justify-content: center;
+    align-items:center;
+}
+.fottericons{
+    display:flex;
+    flex-direction:row;
+}
+
+.icon{
+    height:40px;
+    margin:5px;
+}
+
+@media (max-width: 670px) {
+    .footermain{
+        font-size:0.8rem;
+    }
+    .footermain{
+        font-size:0.8rem;
+    }
+    
+    }
