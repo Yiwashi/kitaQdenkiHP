@@ -8,6 +8,8 @@ import Product1 from "./components/Products/product1";
 import Product2 from "./components/Products/product2";
 import Product3 from "./components/Products/product3";
 import Product4 from "./components/Products/product4";
+import Aboutme from "./components/aboutme/aboutme";
+import Concept from "./components/concept/concept"
 
 export default function Home() {
 
@@ -25,8 +27,10 @@ export default function Home() {
 
     
     <div className={styles.contentTitle}>About me</div>
+      <Aboutme/>
 
     <div className={styles.contentTitle}>Concept</div>
+      <Concept/>
 
     </div>
 

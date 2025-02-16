@@ -1,0 +1,64 @@
+.aboutmeback{
+    display:flex;
+    flex-direction:low;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    margin:50px;    
+}
+
+
+
+.aboutmeBox{
+    display:flex;
+    flex-direction:low;
+    justify-content:center;
+    align-items:center;
+    gap:100px;
+    width:80%;
+    font-family:'Zen';
+}
+
+
+
+.aboutmeimg{
+    height:300px;
+    width:300px;
+    background-color:rgb(248, 242, 242);
+    border-radius:300px;
+}
+
+.aboutmetext{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.aboutmetextName{
+    font-weight: bold;
+    font-size:2rem;
+
+}
+.aboutmeicons{
+    display:flex;
+}
+
+.icon{
+    height:40px;
+    margin:5px;
+}
+
+@media (max-width: 670px) {
+.aboutmeback{
+    margin:0;
+}
+.aboutmeBox{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+    
+    
+}
+
+
+}
