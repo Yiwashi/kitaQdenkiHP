@@ -9,7 +9,7 @@
 
 .productback {
     background-color: rgb(255, 255, 255);
-    width: 90%;
+    width: 85vw;
     border: 10px double #f8edeb;
     box-shadow: 0 0 0 6px #f8edeb;
     padding: 16px;
@@ -48,7 +48,7 @@
     width: 100%;
 }
 
-.product-item3 {
+.productitem3 {
     display:flex;
     padding: 20px;
     border-radius: 5px;
@@ -57,6 +57,18 @@
     font-family: 'Zen';
     width: 100%;
 }
+
+.productitem4 {
+    display:flex;
+    flex-direction: row-reverse;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Zen';
+    width: 100%;
+}
+
 
 .productimg{
     width: 45%;
@@ -82,22 +94,22 @@
     line-height:40px;
     font-family: 'Zen';
     color: #ffffff;
-    font-size: 1.5rem;
+    font-size: 1rem;
     height: 40px;
-    width: 130px;
+    width: 50px;
     text-align: center;
-    border-radius: 10%;
+    border-radius: 40%;
 }
 .productteam{
     background-color: rgb(160, 190, 181);
     font-family: 'Zen';
     color: #ffffff;
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height:40px;
     height: 40px;
-    width: 130px;
+    width: 50px;
     text-align: center;
-    border-radius: 10%;
+    border-radius: 40%;
 }
 .producttype{
     margin-left: 10px;
@@ -183,54 +195,6 @@
   width: 100%;
 }
 
-@media (max-width: 1400px) {   
-
-    .productimg{
-        width: 30%;
-        object-fit:contain;
-    }
-    
-    .producttext{
-        margin: 0 5%;
-        width: 60%;
-    }
-    
-    .productkozin{
-        line-height:50px;
-        font-size: 1.5rem;
-        height: 50px;
-        width: 150px;
-    }
-    .productteam{
-        line-height:50px;
-        font-size: 1.5rem;
-        height: 50px;
-        width: 150px;
-    }
-    .producttype{
-        margin-left: 5%;
-        font-size: 1.2rem;
-    }
-    .productaward{
-        margin-left: 5%;
-        font-size: 1rem;
-    }
-    .producttitle{
-        font-size: 2.5rem;
-        margin-top: 60px;        
-    }
-
-    .productcoment{
-        margin-top: 20px;
-        font-size: 2rem;
-    }
-    .productskil{
-        margin-top: 10px;
-        font-size: 1.5rem;
-    }
-
-
-}
 
 @media (max-width: 1000px) {
     .productimg{
@@ -288,18 +252,18 @@
         align-items: center;
         justify-content: center;
     }
-    .productitem {
+    .productitem1 {
         padding: 0;
         display:flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         font-family: 'Zen';
-        width: 90%;
+        width: 100%;
     }
     .productitem2 {
         display:flex;
-        flex-direction:column-reverse;
+        flex-direction:column;
         align-items: center;
         justify-content: center;
         font-family: 'Zen';
@@ -314,6 +278,15 @@
         font-family: 'Zen';
         width: 100%;
     }
+    .productitem4 {
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Zen';
+        width: 100%;
+    }
+    
 
     .productimg{
         width: 80%;
@@ -323,7 +296,7 @@
 
     .producticons{
         display: flex;
-        justify-content: space-between;
+        justify-content: ceter;
     }
 
     .producttext{
@@ -335,13 +308,13 @@
         line-height:20px;/*縦中央揃えにするならheightと同じ値にする*/
         font-size: 0.6rem;
         height: 20px;
-        width: 80px;
+        width: 40px;
     }
     .productteam{
         line-height:20px;/*縦中央揃えにするならheightと同じ値にする*/
         font-size: 0.6rem;
         height: 20px;
-        width: 80px;
+        width: 40px;
     }
     .producttype{
         font-size: 0.8rem;
