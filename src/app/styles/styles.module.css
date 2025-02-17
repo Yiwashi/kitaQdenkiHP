@@ -21,7 +21,8 @@
 
 @media (max-width: 670px){
     .contentTitle{
-        font-size:2em;
+        font-size:3em;
         line-height:1em;
+        margin:100px 0px;
     }
 }

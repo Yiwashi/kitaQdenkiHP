@@ -10,6 +10,7 @@ import Product3 from "./components/Products/product3";
 import Product4 from "./components/Products/product4";
 import Aboutme from "./components/aboutme/aboutme";
 import Concept from "./components/concept/concept"
+import Fotter from "./components/footer/footer";
 
 export default function Home() {
 
@@ -33,6 +34,7 @@ export default function Home() {
       <Concept/>
 
     </div>
+    <Fotter/>
 
     
     </>
