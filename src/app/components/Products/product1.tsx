@@ -1,9 +1,16 @@
+"use client";
+import { redirect } from "next/navigation";
+
 import Image from "next/image";
 
 import product1img from "./../../Public/images/tamalog.png"
 import productstyles from "./products.module.css"
 
 export default function Product1() {
+
+    const handleRedirect = () => {
+        redirect("/productpages/product1page");
+    };
 
     return (
         <div>
@@ -20,8 +27,8 @@ export default function Product1() {
                             <div className={productstyles.productcoment}>結果用紙の写真をアップロードするだけ！</div>
                             <div className={productstyles.productskil}>Typescript/JavaScript/CSS/Python</div>
                             <div className={productstyles.productskil}>Next.js/React/Flask</div>
-                            <div className={productstyles.productbutton}>
-                                <a href='./products/product1.html' ><span>詳しくみる⇀</span></a>
+                            <div className={productstyles.productbutton} onClick={handleRedirect}>
+                                詳しくみる⇀
                             </div>
                         </div>
                 </div>
