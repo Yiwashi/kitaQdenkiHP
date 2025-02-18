@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from './styles/styles.module.css'
 
 //components
@@ -41,4 +40,3 @@ export default function Home() {
         
       )
     }
-

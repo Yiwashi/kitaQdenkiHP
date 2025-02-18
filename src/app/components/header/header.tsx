@@ -1,6 +1,5 @@
 //Image
-import Image from "next/image";
-import titleGirl from "./../../Public/images/titleGirl.png"
+
 //css
 import headertyles from './headerstyles.module.css'
 //Icon
