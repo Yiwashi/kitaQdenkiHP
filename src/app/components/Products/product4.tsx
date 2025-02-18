@@ -1,9 +1,16 @@
+"use client";
+import { redirect } from "next/navigation";
+
 import Image from "next/image";
 
 import product4img from "./../../Public/images/Portfolio.png"
 import productstyles from "./products.module.css"
 
 export default function Product4() {
+
+    const handleRedirect = () => {
+        redirect("/productpages/product4page");
+    };
 
     return (
         <div>
@@ -19,8 +26,8 @@ export default function Product4() {
                             <div className={productstyles.productcoment}>手がけたアイデアが形になった宝物を、この場所に。</div>
                             <div className={productstyles.productskil}>ver01.HTML/JavaScript(jQuery)/CSS</div>
                             <div className={productstyles.productskil}>ver02.Typescript(Next.js)/JavaScript/CSS</div>
-                            <div className={productstyles.productbutton}>
-                                <a href='./products/product1.html' ><span>詳しくみる⇀</span></a>
+                            <div className={productstyles.productbutton} onClick={handleRedirect}>
+                                詳しくみる⇀
                             </div>
                         </div>
                 </div>
