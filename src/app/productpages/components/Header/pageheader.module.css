@@ -1,0 +1,16 @@
+.header {
+    background-color: #e1cabba4;
+    height: 80px;
+    padding: 20px;
+    text-align: legt;
+    
+}
+.home{
+    font-family:serif;
+    border-radius:100px;
+    padding:5px;
+    border: solid, #e1cabba4;
+    font-size: 1.5rem;
+    position:fixed;
+}
+

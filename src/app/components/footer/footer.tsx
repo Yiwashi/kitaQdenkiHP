@@ -22,7 +22,7 @@ export default function Fotter() {
                             <div className={fotterstyles.footertext3}>-SogoRei Cording Products-</div>
                         </div>
 
-                                <div className={fotterstyles.footermain2}>
+                        <div className={fotterstyles.footermain2}>
                                     <div className={fotterstyles.fottericons}>
                                         <Link href="https://www.instagram.com/0_s0g0" >
                                             <FontAwesomeIcon icon={faInstagram} className={fotterstyles.icon}/>
@@ -37,7 +37,7 @@ export default function Fotter() {
                                             <FontAwesomeIcon icon={faGithub} className={fotterstyles.icon}/>
                                         </Link>
                                     </div>
-                                </div>
+                        </div>
                                 
                         
                     </div>

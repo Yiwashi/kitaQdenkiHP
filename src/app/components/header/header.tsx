@@ -1,4 +1,5 @@
-//Image
+"use client";
+import { useRouter } from "next/navigation";
 
 //css
 import headertyles from './headerstyles.module.css'
@@ -11,6 +12,13 @@ import Link from 'next/link';
 
 
 export default function Header() {
+
+    const router = useRouter();
+    // モーダルを開く
+    const openModal = () => {
+        router.push("?modal=contact", { scroll: false });
+    };
+
 
     return (
         <div className={headertyles.header}>
@@ -30,7 +38,7 @@ export default function Header() {
                     <div className={headertyles.headerBIG}>Products</div>
                     <div className={headertyles.headerSMALL}>作品紹介</div>
                 </Link>
-                <button id="OpenModalContact">
+                <button onClick={openModal}>
                     <div className={headertyles.headerBIG}>Contact</div>
                     <div className={headertyles.headerSMALL}>お問い合わせ</div>
                 </button>

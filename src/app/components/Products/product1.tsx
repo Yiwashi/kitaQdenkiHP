@@ -1,5 +1,5 @@
 "use client";
-import { redirect } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 import Image from "next/image";
 
@@ -8,8 +8,10 @@ import productstyles from "./products.module.css"
 
 export default function Product1() {
 
-    const handleRedirect = () => {
-        redirect("/productpages/product1page");
+    const router = useRouter(); // useRouterの初期化
+
+    const handlerouter = () => {
+        router.push("/productpages/product1page"); // クライアントサイド遷移
     };
 
     return (
@@ -27,7 +29,7 @@ export default function Product1() {
                             <div className={productstyles.productcoment}>結果用紙の写真をアップロードするだけ！</div>
                             <div className={productstyles.productskil}>Typescript/JavaScript/CSS/Python</div>
                             <div className={productstyles.productskil}>Next.js/React/Flask</div>
-                            <div className={productstyles.productbutton} onClick={handleRedirect}>
+                            <div className={productstyles.productbutton} onClick={handlerouter}>
                                 詳しくみる⇀
                             </div>
                         </div>

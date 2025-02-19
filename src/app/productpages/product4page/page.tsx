@@ -4,14 +4,14 @@ import product4 from "./../../Public/images/Portfolio.png"
 import pagestyles from './../styles/productpage.module.css'
 
 //components
-import Header from "@/app/components/header/header";
+import PageHeader from "../components/Header/pageHeader";
 import Fotter from "@/app/components/footer/footer";
 
 export default function Product4page() {
 
     return (
     <>
-      <Header/>
+      <PageHeader/>
 
       <div className={pagestyles.Ptitle}>
               <div className={pagestyles.titleText}>
