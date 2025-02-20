@@ -1,9 +1,14 @@
 "use client";
-
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useSearchParams } from "next/navigation";
+import Link from 'next/link';
 import { Suspense } from "react";
-import styles from "./contactModal.module.css"; // モーダルのスタイル
+
+import aboutmeGirl from "./../../Public/images/Me.png"
+import styles from "./contactModal.module.css"; // CSSモジュール
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook, faGithub, faInstagram, faXTwitter } from "@fortawesome/free-brands-svg-icons";
 
 export default function ContactModalWrapper() {
     return (
@@ -17,22 +22,39 @@ function ContactModal() {
     const router = useRouter();
     const searchParams = useSearchParams();
 
-    // URL のクエリパラメータを取得
-    const isOpen = searchParams.get("modal") === "contact"; // `?modal=contact` のとき開く
+    const isOpen = searchParams.get("modal") === "contact";
 
-    // モーダルを閉じる
     const closeModal = () => {
-        router.replace("/"); // `router.push` ではなく `replace` を使う
+        router.replace("/");
     };
 
-    if (!isOpen) return null; // `?modal=contact` じゃないなら何も表示しない
+    if (!isOpen) return null;
 
     return (
         <div className={styles.modalOverlay} onClick={closeModal}>
             <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
-                <h2>お問い合わせ</h2>
-                <p>ここにお問い合わせフォームを入れる</p>
-                <button onClick={closeModal}>閉じる</button>
+            <div className={styles.modalcovertopImage}></div>
+                <div className={styles.modalcoverImage}>
+                <Image src={aboutmeGirl} alt="" className={styles.aboutmeimg}></Image>
+                    <div className={styles.modalname}>Sogo Rei</div>
+                    <div className={styles.modaltitle}>-Please Follow Me-</div>
+                    <div className={styles.contacticons}>
+                        <Link href="https://www.instagram.com/0_s0g0">
+                            <FontAwesomeIcon icon={faInstagram} className={styles.icon} />
+                        </Link>
+                        <Link href="https://x.com/0_s0g0">
+                            <FontAwesomeIcon icon={faXTwitter} className={styles.icon} />
+                        </Link>
+                        <Link href="https://www.facebook.com/share/1WFxQ2T4mg/">
+                            <FontAwesomeIcon icon={faFacebook} className={styles.icon} />
+                        </Link>
+                        <Link href="https://github.com/0-s0g0">
+                            <FontAwesomeIcon icon={faGithub} className={styles.icon} />
+                        </Link>
+                    </div>
+                    <p className={styles.modalDescription}>楽しい交流を目的としています</p>
+                    <button className={styles.closeButton} onClick={closeModal}>Close</button>
+                </div>
             </div>
         </div>
     );
