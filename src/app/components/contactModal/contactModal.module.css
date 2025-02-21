@@ -13,7 +13,7 @@
 }
 
 .modalContent {
-    background-image:url('@/app/Public/images/modalback.jpg');
+    background-image:url('./../../Public/images/modalback.jpg');
     background-size:cover;
     border-radius: 10px;
     width: 400px;
