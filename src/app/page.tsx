@@ -18,18 +18,16 @@ export default function Home() {
     <Header/>
     <Title/>
     <div className="flex flex-col justify-center items-center">
-      <div className={styles.contentTitle}>Products</div>
+      <div id="products" className={styles.contentTitle}>Products</div>
       <Product1/>
       <Product2/>
       <Product3/>
       <Product4/>koi
-  
-
     
-    <div className={styles.contentTitle}>About me</div>
+    <div id="about-me" className={styles.contentTitle}>About me</div>
       <Aboutme/>
 
-    <div className={styles.contentTitle}>Concept</div>
+    <div id="concept" className={styles.contentTitle}>Concept</div>
       <Concept/>
 
     </div>

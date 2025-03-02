@@ -71,4 +71,15 @@
 	.menuIcon{
 		display:block;
 	}
+    .open {
+        display: flex;
+        flex-direction:column;
+        position:fixed;
+        background-color: rgba(230, 192, 192,0.5);
+        top:100px;
+        right:30;
+        padding:10px;
+        border-radius:30px;
+
+    }
 }
