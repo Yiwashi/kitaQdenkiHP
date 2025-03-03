@@ -11,6 +11,8 @@ import Aboutme from "./components/aboutme/aboutme";
 import Concept from "./components/concept/concept"
 import Fotter from "./components/footer/footer";
 
+import ProjectShowcase from './components/Products/ProjectShowcase';
+
 export default function Home() {
 
     return (
@@ -23,6 +25,7 @@ export default function Home() {
       <Product2/>
       <Product3/>
       <Product4/>koi
+      <ProjectShowcase/>
     
     <div id="about-me" className={styles.contentTitle}>About me</div>
       <Aboutme/>
