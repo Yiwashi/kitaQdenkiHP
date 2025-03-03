@@ -3,13 +3,11 @@ import styles from './styles/styles.module.css'
 //components
 import Title from "./components/title/title";
 import Header from "./components/header/header";
-import Product1 from "./components/Products/product1";
-import Product2 from "./components/Products/product2";
-import Product3 from "./components/Products/product3";
-import Product4 from "./components/Products/product4";
 import Aboutme from "./components/aboutme/aboutme";
 import Concept from "./components/concept/concept"
 import Fotter from "./components/footer/footer";
+
+import ProjectShowcase from './components/Products/ProjectShowcase';
 
 export default function Home() {
 
@@ -19,10 +17,7 @@ export default function Home() {
     <Title/>
     <div className="flex flex-col justify-center items-center">
       <div id="products" className={styles.contentTitle}>Products</div>
-      <Product1/>
-      <Product2/>
-      <Product3/>
-      <Product4/>koi
+      <ProjectShowcase/>
     
     <div id="about-me" className={styles.contentTitle}>About me</div>
       <Aboutme/>
