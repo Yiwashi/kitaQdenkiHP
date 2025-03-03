@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { projects } from '../../data/projects';  // プロジェクトデータをインポート
+import { projects,Project } from './../../data/projects';  // プロジェクトデータをインポート
 import Image from "next/image";
 import Link from 'next/link';
 import pagestyles from './../styles/productpage.module.css';  // スタイルのインポート
@@ -12,7 +12,7 @@ import { use } from 'react';  // React.use() をインポート
 
 // paramsを非同期で解決
 const ProjectDetail = ({ params }: { params: Promise<{ id: string }> }) => {
-  const [project, setProject] = useState<any>(null);  // プロジェクト情報を格納する状態
+  const [project, setProject] = useState<Project | null>(null);  // プロジェクト情報を格納する状態
   const [loading, setLoading] = useState(true);  // ローディング状態を管理
 
   // paramsを解決
@@ -21,7 +21,7 @@ const ProjectDetail = ({ params }: { params: Promise<{ id: string }> }) => {
   useEffect(() => {
     const { id } = resolvedParams;  // 解決したparamsからidを取得
     const foundProject = projects.find(project => project.id === parseInt(id));  // プロジェクトを探す
-    setProject(foundProject);  // プロジェクトが見つかったら設定
+    setProject(foundProject || null);  // プロジェクトが見つかったら設定
     setLoading(false);  // ローディング完了
   }, [resolvedParams]);  // paramsが解決されたときに実行
 
@@ -76,22 +76,22 @@ const ProjectDetail = ({ params }: { params: Promise<{ id: string }> }) => {
               <th>使用技術</th>
               <td>{project.technologies.join(", ")}</td>
             </tr>
-            <tr className={pagestyles.tableRow}>
-              <th>発表プロダクト</th>
-              <td>{project.prezentation}</td>
-            </tr>
+            {project.prezentation && project.prezentation !== 'none' ? (
+              <tr className={pagestyles.tableRow}>
+                <th>発表プロダクト</th>
+                <td>{project.prezentation}</td>
+              </tr>
+            ) : null}  
             <tr className={pagestyles.tableRow}>
               <th>制作期間</th>
               <td><ReactMarkdown>{project.duration}</ReactMarkdown></td>
             </tr>
-            <tr className={pagestyles.tableRow}>
-              <th>外部記事</th>
-              {project.outlink ? (
-                <td><Link href={project.outlink}>{project.outlink}</Link></td>
-              ) : (
-                <td>特になし</td>  // outlinkがない場合はハイフン（または任意のメッセージ）を表示
-              )}
-            </tr>
+            {project.outlink && project.outlink !== 'none' ? (
+              <tr className={pagestyles.tableRow}>
+                <th>外部記事</th>
+                <td><Link href={project.outlink}>{project.outname}</Link></td>
+              </tr>
+            ) : null} 
           </tbody>
         </table>    
       </div>

@@ -1,9 +1,32 @@
+import { StaticImageData } from "next/image";
 import product1img from "./../Public/images/tamalog.png";
 import product2img from "./../Public/images/shikaku.png";
 import product3img from "./../Public/images/ThanksLink.png";
 import product4img from "./../Public/images/Portfolio.png";
 
-export const projects = [
+export interface Project {
+    id: number;
+    title: string;
+    description: string;
+    description2: string;
+    image:StaticImageData;
+    tags: string[];
+    awardTitle:string;
+    background: string;
+    purpose: string;
+    function: string;
+    number:string;
+    role: string;
+    prezentation:string;
+    technologies: string[];
+    duration: string;
+    github: string;
+    outname:string;
+    outlink?: string;  // 外部リンクはオプショナルにする
+    
+  }
+
+  export const projects: Project[] = [
   {
     id: 1,
     title: "たまLog",
@@ -20,7 +43,9 @@ export const projects = [
     number:'1名',
     role: "すべて",
     prezentation:'KCL☆Hack (2024.11.17)学内',
-    duration: "(webアプリの仕組みなどの勉強) 3か月  \n(デザイン・コーディング) 2か月",    
+    duration: "(webアプリの仕組みなどの勉強) 3か月  \n(デザイン・コーディング) 2か月",
+    outname:'none',
+    outlink:'none',
 },
 {
     id: 2,
@@ -60,26 +85,29 @@ export const projects = [
     role: "POST/reply投稿・作成画面  \n誕生日（受信・送信）画面・メッセージカード作成機能  \nGeminiAPIプロンプト作成  \nmaster.jsによるボールの作成",
     prezentation:'技育camp(2025.1.19)  \n努力賞受賞',
     duration: "7日間",
-    outname:"技育プロジェクト : サポーターズ公式X",
+    outname:"技育プロジェクト : サポーターズ公式Xリンク",
     outlink:"https://x.com/geek_pjt/status/1880902623957827945",
   },
+
   {
     id: 4,
     title: "MyPortfolio",
     description: "ポートフォリオサイト",
     description2: "手がけたアイデアが形になった宝物たち。",
     image: product4img,
+    awardTitle: "none",
     tags: ["Website", "Team Project"],
     technologies: ["Next.js/TS", "HTML", "CSS", "jQuery"],
     github: "https://github.com/0-s0g0/MyPortfolio_Next",
     background :"ハッカソンで作った作品をまとめたサイトを作りたい  \nLT等で使うポートフォリオを作りたい！",
-    purpose:"初心に戻ってHTMLとCSSのコーディングを丁寧に一からしたい。  \nCloudFlareに挙げるのでnextで一から書き直した",
-    function:"(1) Productリストとその詳細情報  \n活動履歴の作成  \nnfc表示用のcontactモーダル ",
+    purpose:"初心に戻ってHTMLとCSSのコーディングを丁寧に一からしたい。  \n(追記)CloudFlareに挙げるのでnextで一から書き直した。",
+    function:"Productリストとその詳細情報  \n活動履歴の作成  \nnfc表示用のcontactモーダル ",
     number:'1名',
     role: "すべて",
-    prezentation:'特になし',
+    prezentation:'none',
     duration: "(2025.01.01～Now)",
+    outname:"none",
+    outlink:"none",
   },
 
-  
 ];
