@@ -3,6 +3,7 @@ import product1img from "./../Public/images/tamalog.png";
 import product2img from "./../Public/images/shikaku.png";
 import product3img from "./../Public/images/ThanksLink.png";
 import product4img from "./../Public/images/Portfolio.png";
+import product5img from "./../Public/images/Dream.png";
 
 export interface Project {
     id: number;
@@ -96,7 +97,7 @@ export interface Project {
     description2: "手がけたアイデアが形になった宝物たち。",
     image: product4img,
     awardTitle: "none",
-    tags: ["Website", "Team Project"],
+    tags: ["Website", "Individual Project"],
     technologies: ["Next.js/TS", "HTML", "CSS", "jQuery"],
     github: "https://github.com/0-s0g0/MyPortfolio_Next",
     background :"ハッカソンで作った作品をまとめたサイトを作りたい  \nLT等で使うポートフォリオを作りたい！",
@@ -109,5 +110,27 @@ export interface Project {
     outname:"none",
     outlink:"none",
   },
+  {
+    id: 5,
+    title: "DreamShere",
+    description: "夢を共有する場所へ",
+    description2: "学生と企業が夢でつながるマッチングアプリ",
+    image: product5img,
+    awardTitle: "none",
+    tags: ["Web App", "Team Project"],
+    technologies: ["Next.js/TS", "CSS"],
+    github: "https://github.com/0-s0g0/DopingRamune",
+    background :"AprilDreamに沿った夢の発信を支援サービスがテーマ  \n自分の夢を語れる場所の提供と企業サイドの人材探しの場としても",
+    purpose:"初の野良チーム参加！  \n3三日間の超短期期間でのハッカソンのため得意分野での参戦",
+    function:"夢ポスター作製  \n画像と熱意をシェア  \nポイント付与制による企業とのマッチング ",
+    number:'4名',
+    role: "フロントエンド担当  \nフロントレイアウト設定  \n画像編集機能作成  \nフッター/ヘッダー作成  \nマイページ作成",
+    prezentation:'PR TIMES HACKATHON 2025 Winter(2025.2.26-28)',
+    duration: "3日間",
+    outname:"none",
+    outlink:"none",
+  },
+
+
 
 ];
