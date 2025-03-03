@@ -7,6 +7,7 @@ import Link from 'next/link';
 import pagestyles from './../styles/productpage.module.css';  // スタイルのインポート
 import PageHeader from "../components/Header/pageHeader";
 import Fotter from "@/app/components/footer/footer";
+import ReactMarkdown from 'react-markdown';
 import { use } from 'react';  // React.use() をインポート
 
 // paramsを非同期で解決
@@ -53,23 +54,43 @@ const ProjectDetail = ({ params }: { params: Promise<{ id: string }> }) => {
             </tr>
             <tr className={pagestyles.tableRow}>
               <th>背景</th>
-              <td>{project.description}</td>
+              <td> <ReactMarkdown>{project.background}</ReactMarkdown></td>
             </tr>
             <tr className={pagestyles.tableRow}>
               <th>目的</th>
-              <td>{project.goal}</td>
+              <td> <ReactMarkdown>{project.purpose}</ReactMarkdown></td>
+            </tr>
+            <tr className={pagestyles.tableRow}>
+              <th>機能</th>
+              <td> <ReactMarkdown>{project.function}</ReactMarkdown></td>
+            </tr>
+            <tr className={pagestyles.tableRow}>
+              <th>制作人数</th>
+              <td><ReactMarkdown>{project.number}</ReactMarkdown></td>
             </tr>
             <tr className={pagestyles.tableRow}>
               <th>担当箇所</th>
-              <td>{project.role}</td>
+              <td><ReactMarkdown>{project.role}</ReactMarkdown></td>
             </tr>
             <tr className={pagestyles.tableRow}>
               <th>使用技術</th>
               <td>{project.technologies.join(", ")}</td>
             </tr>
             <tr className={pagestyles.tableRow}>
+              <th>発表プロダクト</th>
+              <td>{project.prezentation}</td>
+            </tr>
+            <tr className={pagestyles.tableRow}>
               <th>制作期間</th>
-              <td>{project.duration}</td>
+              <td><ReactMarkdown>{project.duration}</ReactMarkdown></td>
+            </tr>
+            <tr className={pagestyles.tableRow}>
+              <th>外部記事</th>
+              {project.outlink ? (
+                <td><Link href={project.outlink}>{project.outlink}</Link></td>
+              ) : (
+                <td>特になし</td>  // outlinkがない場合はハイフン（または任意のメッセージ）を表示
+              )}
             </tr>
           </tbody>
         </table>    
