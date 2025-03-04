@@ -29,7 +29,6 @@
 .footermainText{
     display:flex;
     flex-direction:column;
-    font-family:'Zen';
     font-size:2rem;
     text-align: center;
     padding:60px;

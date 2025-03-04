@@ -1,17 +1,15 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import {Zen_Maru_Gothic } from "next/font/google";
 import "./globals.css";
 import ContactModal from "./components/contactModal/contactModal";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+
+const ZenMaru = Zen_Maru_Gothic({
+  weight: "400",
+  variable: "--font-zen-maru-gothic",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 
 
@@ -28,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={ZenMaru.className}
       >
         {children}
         <ContactModal/>

@@ -114,7 +114,7 @@
 
 .tableWrapper {
     display: flex;
-    margin: 100px;
+    margin: 50px;
     align-items: center;
     justify-content: center;
 }
@@ -122,7 +122,6 @@
 .table {
     border-collapse: collapse; /* 罫線を一本にまとめる */
     margin: 0 auto; /* テーブルを中央配置 */
-    font-family: 'Zen', sans-serif;
 }
 
 .table th {
@@ -145,19 +144,16 @@
 
 
 
-  @media (max-width: 670px) {
+  @media (max-width: 900px) {
     .Ptitle{
-        margin-top:20px;
+        margin-top:40px;
         display:flex;
         flex-direction:column;
         justify-content: center;
         align-items:center;
-        gap:100px;
+        gap:50px;
     }
 
-    .Ptitle img{
-        height:300px
-    }
 
     .slider {
         width: 300px;
@@ -169,6 +165,32 @@
 
     .slide {
         width: 260px;
+    }
+
+  }
+
+  @media (max-width: 500px) {
+
+
+    .Ptitleimg{
+        height:300px;
+        width:300px;
+    }
+
+    .tableWrapper {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .table th {
+        padding: 5px;
+        font-size: 0.75rem;
+    }
+    
+    .table td {
+        padding: 5px;
+        font-size: 0.75rem;
     }
 
   }
