@@ -88,7 +88,7 @@ const ProjectShowcase = () => {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-2xl font-medium text-rose-500 mb-2">{project.title}</h3>
+                  <h3 className="text-2xl font-medium text-amber-800 mb-2">{project.title}</h3>
                   <p className="text-stone-600 mb-1">{project.description}</p>
                   <p className="text-stone-600 mb-4">{project.description2}</p>
 
