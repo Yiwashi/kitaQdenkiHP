@@ -52,7 +52,7 @@ function ContactModal() {
                             <FontAwesomeIcon icon={faGithub} className={styles.icon} />
                         </Link>
                     </div>
-                    <p className={styles.modalDescription}>楽しい交流を目的としています</p>
+                    <p className={styles.modalDescription}>Connections create possibilities</p>
                     <button className={styles.closeButton} onClick={closeModal}>Close</button>
                 </div>
             </div>
