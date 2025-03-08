@@ -4,6 +4,7 @@ import product2img from "./../Public/images/shikaku.png";
 import product3img from "./../Public/images/ThanksLink.png";
 import product4img from "./../Public/images/Portfolio.png";
 import product5img from "./../Public/images/Dream.png";
+import product6img from "./../Public/images/Tekuteku.png";
 
 export interface Project {
     id: number;
@@ -118,17 +119,38 @@ export interface Project {
     image: product5img,
     awardTitle: "none",
     tags: ["Web App", "Team Project"],
-    technologies: ["Next.js/TS", "CSS"],
+    technologies: ["Next.js/TS", "CSS", "Go"],
     github: "https://github.com/0-s0g0/DopingRamune",
     background :"AprilDreamに沿った夢の発信を支援サービスがテーマ  \n自分の夢を語れる場所の提供と企業サイドの人材探しの場としても",
     purpose:"初の野良チーム参加！  \n3三日間の超短期期間でのハッカソンのため得意分野での参戦",
     function:"夢ポスター作製  \n画像と熱意をシェア  \nポイント付与制による企業とのマッチング ",
     number:'4名',
     role: "フロントエンド担当  \nフロントレイアウト設定  \n画像編集機能作成  \nフッター/ヘッダー作成  \nマイページ作成",
-    prezentation:'PR TIMES HACKATHON 2025 Winter(2025.2.26-28)',
+    prezentation:'PR TIMES HACKATHON 2025 Winter(2025.2.28)',
     duration: "3日間",
     outname:"none",
     outlink:"none",
+  },
+
+  {
+    id: 6,
+    title: "TEKUTEKU",
+    description: "脳細胞のように九工大生と東科大生を繋げる",
+    description2: "GUMLABOとTakiPlazaの交流を目指して",
+    image: product6img,
+    tags: ["Web App", "Team Project","Award"],
+    technologies: ["Next.js/TS", "WebRTC", "CSS", "Go", "HCL"],
+    awardTitle: "Kyutech×ScienceTokyoハッカソン(2025/03)企業賞",
+    github: "https://github.com/0-s0g0/TEKUTEKU",
+    background :"東京科学大と九州工業大の交流を促進  \n両大学のワーキングスペースでリアルタイムでの交流を目指す",
+    purpose:"野良チーム開発。イメージにそったUIのデザインと実装を  \バックと繋げる工程にチャレンジしたい",
+    function:"(1) 自分のスマホからコメントを投稿 \n(2) 各キャンパスのモニターにそれぞれの想いを表示  \n(3) それぞれの想いに対する返信やいいね  \n(4) いいね数や返信、時間による情報を円の数や大きさで表現",
+    number:'2名',
+    role: "フロントエンド担当  \nフロントレイアウト設定  \モニター側UI  \nアニメーション作成",
+    prezentation:'Kyutech×ScienceTokyoハッカソン(2025.03.07)  \nProgate賞受賞',
+    duration: "3日間",
+    outname:"topa'z記事",
+    outlink:"https://topaz.dev/projects/9b22d2a5cfb1ee935405",
   },
 
 
