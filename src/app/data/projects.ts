@@ -5,6 +5,7 @@ import product3img from "./../Public/images/ThanksLink.png";
 import product4img from "./../Public/images/Portfolio.png";
 import product5img from "./../Public/images/Dream.png";
 import product6img from "./../Public/images/Tekuteku.png";
+import product7img from "./../Public/images/APU.jpg";
 
 export interface Project {
     id: number;
@@ -145,12 +146,33 @@ export interface Project {
     background :"東京科学大と九州工業大の交流を促進  \n両大学のワーキングスペースでリアルタイムでの交流を目指す",
     purpose:"野良チーム開発。イメージにそったUIのデザインと実装を  \バックと繋げる工程にチャレンジしたい",
     function:"(1) 自分のスマホからコメントを投稿 \n(2) 各キャンパスのモニターにそれぞれの想いを表示  \n(3) それぞれの想いに対する返信やいいね  \n(4) いいね数や返信、時間による情報を円の数や大きさで表現",
-    number:'2名',
+    number:'4名',
     role: "フロントエンド担当  \nフロントレイアウト設定  \モニター側UI  \nアニメーション作成",
     prezentation:'Kyutech×ScienceTokyoハッカソン(2025.03.07)  \nProgate賞受賞',
     duration: "3日間",
     outname:"topa'z記事",
     outlink:"https://topaz.dev/projects/9b22d2a5cfb1ee935405",
+  },
+
+  {
+    id: 7,
+    title: "Nonverbal",
+    description: "イラストで繋がるパズルゲーム",
+    description2: "見て！描いて！そろえて！あてる！楽しさを",
+    image: product7img,
+    tags: ["Web App", "Team Project","Award"],
+    technologies: ["Bolt.diy", "Next.js/TS"],
+    awardTitle: "APU×九工大ミニハッカソン(2025/03)金賞",
+    github: "https://github.com/0-s0g0/APUminiHack",
+    background :"交流に関連したアプリを生成AI[bolt.diy]を使って生成  \ninputを'言葉'ではなく'絵'で挑戦",
+    purpose:"アイデア勝負。プロンプト作成と発表方法の工夫を",
+    function:"(1) 与えられたテーマにそってイラストを描く  \n(2) 描き終わると3×3のランダムパズルへ変換  \n(3) 解答者はパズルを解きながらテーマを推察  \n(4) 予想テーマと実際のテーマの一致度を表示",
+    number:'4名',
+    role: "プロンプト作成",
+    prezentation:'APU×九工大ミニハッカソン(2025.03.10)  \n金賞受賞',
+    duration: "2時間",
+    outname:"none",
+    outlink:"none",
   },
 
 

@@ -14,12 +14,20 @@ const ProjectShowcase = () => {
       prev.includes(filter) ? prev.filter(f => f !== filter) : [...prev, filter]
     );
   };
-
+/*
+//和集合
   const filteredProjects = activeFilters.length === 0
     ? projects
     : projects.filter(project =>
         project.tags.some(tag => activeFilters.includes(tag))
-      );
+      ); */
+
+      const filteredProjects = activeFilters.length === 0
+      ? projects
+      : projects.filter(project =>
+          activeFilters.every(filter => project.tags.includes(filter))
+        );
+    
 
   const getTagIcon = (tag: string) => {
     switch(tag) {
