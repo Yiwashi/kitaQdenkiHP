@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import {Zen_Maru_Gothic } from "next/font/google";
 import "./globals.css";
 import ContactModal from "./components/contactModal/contactModal";
+import Head from "next/head";  // Importing Head here
 
 
 const ZenMaru = Zen_Maru_Gothic({
@@ -14,7 +15,7 @@ const ZenMaru = Zen_Maru_Gothic({
 
 
 export const metadata: Metadata = {
-  title: "MyPortfolio",
+  title: "あしあと",
   description: "SogoReiMyPortfolio",
 };
 
@@ -25,6 +26,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="あしあと" />
+        <link rel="manifest" href="/site.webmanifest" />
+      </Head>
       <body
         className={ZenMaru.className}
       >

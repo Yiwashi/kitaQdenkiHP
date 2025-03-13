@@ -55,12 +55,17 @@
     /* displayをnoneに指定してください */
     display:none;
   }
+  .logoimg{
+    height: 50px;
+    width:  230px;
 
+  }
 @media (max-width: 1000px) {
 
     .logo{
         font-size: 2rem;
     }
+
 
 }
 
@@ -82,4 +87,9 @@
         border-radius:30px;
 
     }
+    .logoimg{
+        height: 40px;
+        width:  170px;
+    
+      }
 }

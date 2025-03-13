@@ -25,7 +25,7 @@ export default function Product1() {
                                 <div className={productstyles.producttype}>#webアプリ</div>
                                 <div className={productstyles.productaward}>KCL☆Hack(2024/11)金賞</div>
                         </div>
-                            <div className={productstyles.producttitle}>体組成計管理アプリ「たまLog」</div>
+                            <div className={productstyles.producttitle}></div>
                             <div className={productstyles.productcoment}>結果用紙の写真をアップロードするだけ！</div>
                             <div className={productstyles.productskil}>Typescript/JavaScript/CSS/Python</div>
                             <div className={productstyles.productskil}>Next.js/React/Flask</div>
