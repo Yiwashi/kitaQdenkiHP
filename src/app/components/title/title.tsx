@@ -1,6 +1,7 @@
 import Image from "next/image";
 import titleGirl from "./../../Public/images/titleGirl.png"
 import titlestyles from './titlestyles.module.css'
+
 export default function Title() {
 
     return (
