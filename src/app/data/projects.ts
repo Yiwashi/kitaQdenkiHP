@@ -137,7 +137,7 @@ export interface Project {
     id: 6,
     title: "TEKUTEKU",
     description: "脳細胞のように九工大生と東科大生を繋げる",
-    description2: "GUMLABOとTakiPlazaの交流を目指して",
+    description2: "GYMLABOとTakiPlazaの交流を目指して",
     image: product6img,
     tags: ["Web App", "Team Project","Award"],
     technologies: ["Next.js/TS", "WebRTC", "CSS", "Go", "HCL"],
