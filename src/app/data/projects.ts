@@ -6,6 +6,7 @@ import product4img from "./../Public/images/Portfolio.png";
 import product5img from "./../Public/images/Dream.png";
 import product6img from "./../Public/images/Tekuteku.png";
 import product7img from "./../Public/images/APU.jpg";
+import product8img from "./../Public/images/stepbycode.png";
 
 export interface Project {
     id: number;
@@ -173,6 +174,27 @@ export interface Project {
     duration: "2時間",
     outname:"none",
     outlink:"none",
+  },
+
+  {
+    id: 8,
+    title: "StepByCodeHP",
+    description: "北九州のITコミュニティHP",
+    description2: "運営メンバーで作成！",
+    image: product8img,
+    tags: ["Website", "Team Project"],
+    technologies: ["cloudflare", "Next.js/TS","CSS"],
+    awardTitle: "none",
+    github: "https://github.com/StepByCode/HP",
+    background :"現在運営中のITコミュニティのHPをデザイン&コーディング  \n運営メンバーでインフラ・別ページ作成などで分担を",
+    purpose:"フルレスポンシブ対応をさせたい、活動中なのが分かるようにブログ形式にしたい",
+    function:"(1) メインでアニメーションの配置  \n(2) ブログをSNSで作成した画像を使う  \n(3) 各記事をモーダルで表示  \n(4) 記事のタグごとの検索",
+    number:'3名',
+    role: "メインPage/BlogPageのデザイン&コーディング",
+    prezentation:'none',
+    duration: "2025/3/17～随時変更中",
+    outname:"https://stepbycode.work/",
+    outlink:"https://stepbycode.work/",
   },
 
 
