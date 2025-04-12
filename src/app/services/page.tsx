@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card"
-import { Cable, CircuitBoard,PencilRuler,Wrench,BookKey,InspectionPanel,HousePlug } from "lucide-react"
+import { Cable, Drill ,CircuitBoard,PencilRuler,Wrench,BookKey,InspectionPanel,HousePlug } from "lucide-react"
 import Mainservice from "./components/main"
 import Image from "next/image"
 import Simage01 from '@/public/images/image01.jpg'
@@ -9,7 +9,7 @@ import Simage04 from '@/public/images/image04.jpg'
 import Simage05 from '@/public/images/image05.jpg'
 import Simage06 from '@/public/images/image06.jpg'
 import Simage07 from '@/public/images/image07.jpg'
-
+import Simage08 from '@/public/images/image08.jpg'
 
 export default function ServicePage() {
   return (
@@ -69,11 +69,23 @@ export default function ServicePage() {
             <CardContent className="p-4 flex flex-col items-center text-center space-y-4">
             <Image
               src={Simage04}
-                alt="工事"
+                alt="電気工事"
                 className="w-full h-80 object-cover rounded-xl hover:scale-105 transition-transform duration-300"
               />
               <Wrench className="h-8 w-8 text-red-600" />
-              <h3 className="text-lg font-bold">電気設備工事・通信設備工事</h3>
+              <h3 className="text-lg font-bold">電気設備工事</h3>
+              <p className="text-sm text-gray-500">Electrical & communication installation</p>
+            </CardContent>
+          </Card>
+          <Card className="transition-all duration-300 hover:shadow-xl">
+            <CardContent className="p-4 flex flex-col items-center text-center space-y-4">
+            <Image
+              src={Simage05}
+                alt="通信工事"
+                className="w-full h-80 object-cover rounded-xl hover:scale-105 transition-transform duration-300"
+              />
+              <Drill className="h-8 w-8 text-red-600" />
+              <h3 className="text-lg font-bold">通信設備工事</h3>
               <p className="text-sm text-gray-500">Electrical & communication installation</p>
             </CardContent>
           </Card>
@@ -82,12 +94,12 @@ export default function ServicePage() {
           <Card className="transition-all duration-300 hover:shadow-xl">
             <CardContent className="p-4 flex flex-col items-center text-center space-y-4">
             <Image
-              src={Simage05}
+              src={Simage06}
                 alt="保守管理"
                 className="w-full h-80 object-cover rounded-xl hover:scale-105 transition-transform duration-300"
               />
               <BookKey className="h-8 w-8 text-red-600" />
-              <h3 className="text-lg font-bold">機器、公害監視計の保守管理</h3>
+              <h3 className="text-lg font-bold">各種製造機器、公害監視計の保守、管理</h3>
               <p className="text-sm text-gray-500">Maintenance of equipment and monitoring systems</p>
             </CardContent>
           </Card>
@@ -96,7 +108,7 @@ export default function ServicePage() {
           <Card className="transition-all duration-300 hover:shadow-xl">
             <CardContent className="p-4 flex flex-col items-center text-center space-y-4">
             <Image
-              src={Simage06}
+              src={Simage07}
                 alt="半導体"
                 className="w-full h-80 object-cover rounded-xl hover:scale-105 transition-transform duration-300"
               />
@@ -110,12 +122,12 @@ export default function ServicePage() {
           <Card className="transition-all duration-300 hover:shadow-xl">
             <CardContent className="p-4 flex flex-col items-center text-center space-y-4">
             <Image
-              src={Simage07}
+              src={Simage08}
                 alt="建築物"
                 className="w-full h-80 object-cover rounded-xl hover:scale-105 transition-transform duration-300"
               />
               <HousePlug className="h-8 w-8 text-red-600" />
-              <h3 className="text-lg font-bold">建築物 石綿含有事前調査</h3>
+              <h3 className="text-lg font-bold">建築物、工作物 石綿含有事前調査</h3>
               <p className="text-sm text-gray-500">Asbestos content survey for buildings</p>
             </CardContent>
           </Card>

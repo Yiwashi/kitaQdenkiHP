@@ -37,7 +37,7 @@ export default function CompanyPage() {
               <Phone className="h-4 w-4 text-red-500" />
               <span>(TEL/FAX)093-882-3025</span>
             </p>
-            <p>(工場)</p>
+            <p className="mt-10">(工場)</p>
             <div className="flex items-center gap-2">
               <MapPin className="h-4 w-4 text-red-500" />
               <p className="flex flex-col">
@@ -49,6 +49,18 @@ export default function CompanyPage() {
               <Phone className="h-4 w-4 text-red-500" />
               <span>(TEL)093-953-9337:(FAX)093-953-9376</span>
             </p>
+           
+                  <div className="w-full  bg-gray-100 rounded-md flex items-center justify-center">
+                        <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6628.199029496838!2d130.8623307764477!3d33.83554417323934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543c6db00cd394f%3A0x4edffa16866d8b3f!2z44CSODAyLTA5Nzkg56aP5bKh55yM5YyX5Lmd5bee5biC5bCP5YCJ5Y2X5Yy65b6z5Yqb5paw55S677yS5LiB55uu77yR77yY4oiS77yS77yTIOW3neWOn-WAieW6q-S6i-WLmeaJgA!5e0!3m2!1sja!2sjp!4v1744484827067!5m2!1sja!2sjp"
+                        width="100%"
+                        height="500"
+                        style={{ border: 0 }}
+                        allowFullScreen
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                  </div> <p className="text-sm text-gray-500">北九州モノレール 守恒駅 から 徒歩15分</p>
                     </TableCell>
                   </TableRow>
                   <TableRow>
