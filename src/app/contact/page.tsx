@@ -15,7 +15,7 @@ export default function ContactPage() {
  
       <div className="w-full ">
       <div className=" m-12">
-      <h2 className="text-3xl font-bold mb-10 flex flex-col items-center text-red-600">お問い合わせ方法</h2>
+      <h2 className="text-3xl font-bold mb-10 flex flex-col items-center text-red-600">Contact us</h2>
             <div className="flex flex-col items-center">
             <div className="space-y-4 text-xl ">
               <div className="flex items-start space-x-3">

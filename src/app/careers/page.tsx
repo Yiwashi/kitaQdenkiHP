@@ -13,7 +13,7 @@ export default function CareersPage() {
       <div className="w-full ">
         <div className=" m-12">
 
-      <h2 className="text-3xl font-bold mb-10 flex flex-col items-center text-red-600">求人情報</h2>
+      <h2 className="text-3xl font-bold mb-10 flex flex-col items-center text-red-600">Job Openings</h2>
 
 
       <Card className="m-12 ">
