@@ -24,6 +24,7 @@ export default function MainCompany() {
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
              会社案内
             </h1>
+            
           </div>
         </div>
       </div>
