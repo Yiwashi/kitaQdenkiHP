@@ -1,35 +1,25 @@
-import styles from './styles/styles.module.css'
-
-//components
-import Title from "./components/title/title";
-import Header from "./components/header/header";
-import Aboutme from "./components/aboutme/aboutme";
-import Concept from "./components/concept/concept"
-import Fotter from "./components/footer/footer";
-
-import ProjectShowcase from './components/Products/ProjectShowcase';
+import Link from "next/link"
+import Image from "next/image"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent } from "@/components/ui/card"
+import { ArrowRight, Zap, Shield, PenToolIcon as Tool, Settings, Users, Phone } from "lucide-react"
+import HomeMain from "./home/components/main"
+import ServiceHome from "./home/components/services"
+import CompanyHome from "./home/components/company"
+import CareerHome from "./home/components/careers"
 
 export default function Home() {
+  return (
+    <div className="flex flex-col items-center justify-center">
+      <HomeMain/>
 
-    return (
-    <>
-    <Header/>
-    <Title/>
-    <div className="flex flex-col justify-center items-center">
-      <div id="products" className={styles.contentTitle}>Products</div>
-      <ProjectShowcase/>
-    
-    <div id="about-me" className={styles.contentTitle}>About me</div>
-      <Aboutme/>
+      <ServiceHome/>
 
-    <div id="concept" className={styles.contentTitle}>Concept</div>
-      <Concept/>
+      <CompanyHome/>
 
+      <CareerHome/>
+
+      
     </div>
-    <Fotter/>
-
-    
-    </>
-        
-      )
-    }
+  )
+}

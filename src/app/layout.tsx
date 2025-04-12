@@ -1,47 +1,31 @@
-import type { Metadata } from "next";
-import {Zen_Maru_Gothic } from "next/font/google";
-import "./globals.css";
-import ContactModal from "./components/contactModal/contactModal";
-import Head from "next/head";  // Importing Head here
+import type React from "react"
+import type { Metadata } from "next"
+import { Inter } from "next/font/google"
+import "./globals.css"
+import Header from "@/components/header"
+import Footer from "@/components/footer"
 
-
-const ZenMaru = Zen_Maru_Gothic({
-  weight: "400",
-  variable: "--font-zen-maru-gothic",
-  subsets: ["latin"],
-});
-
-
-
+const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "あしあと",
-  description: "SogoReiMyPortfolio",
-};
+  title: "株式会社北九州電機",
+  description: "配電盤の製造、修理及び工事施工、電気設備工事など幅広いサービスを提供しています。",
+}
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <html lang="en">
-      <Head>
-        <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="shortcut icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <meta name="apple-mobile-web-app-title" content="あしあと" />
-        <link rel="manifest" href="/site.webmanifest" />
-      </Head>
-
-
-      <body
-        className={ZenMaru.className}
-      >
-        {children}
-        <ContactModal/>
+      <body className={inter.className}>
+          <div className="flex  flex-col  justify-center ">
+            <Header />
+            <main className="flex-1">{children}</main>
+            <Footer />
+          </div>
       </body>
     </html>
-  );
+  )
 }
