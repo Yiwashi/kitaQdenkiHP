@@ -18,7 +18,7 @@ export default function CareerHome() {
             <div className="pt-4">
               <Link href="/careers">
                 <Button className="bg-red-600 hover:bg-red-700">
-                  採用情報の詳細を見る
+                  採用情報を見る
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
