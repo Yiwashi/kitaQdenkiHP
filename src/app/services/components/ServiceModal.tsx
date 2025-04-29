@@ -62,6 +62,7 @@ export default function ServiceModal({ isOpen, onClose, title, images }: Props) 
           src={img}
           alt={`${title}-thumb-${index}`}
           className="rounded"
+          onContextMenu={(e) => e.preventDefault()}
           width={50}
           height={40}
         />

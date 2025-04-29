@@ -21,42 +21,42 @@ export type Service = {
 
   export const services = [
     {
-      title: '配電盤の製造、修理及び工事施工',
+      title: '各種製造機器の設計、製造、保守',
       icon: 'CircuitBoard',
       mainImage: Simage01,
       description: 'Manufacturing, repair and installation of switchboards',
-      images: [Simage01, Simage02],
+      images: [Simage01, Simage02,Simage03, Simage04,Simage05, Simage06],
     },
     {
-      title: 'ユニット配線及びケーブル製作',
+      title: '制御盤、配電盤の設計、制作、施工、修理',
       icon: 'Cable',
       mainImage: Simage02,
       description: 'Unit wiring and cable fabrication',
       images: [Simage02],
     },
     {
-      title: '各種製造機器の設計及び製造',
+      title: 'ユニット配線及びケーブル製作',
       icon:  'PencilRuler',
       mainImage: Simage03,
       description: 'Design and manufacturing of various equipment',
       images: [Simage03, Simage04],
     },
     {
-      title: '電気設備工事',
+      title: '電気設備の設計、施工',
       icon: 'Wrench',
       mainImage: Simage04,
       description: 'Electrical & communication installation',
       images: [Simage04],
     },
     {
-      title: '通信設備工事',
+      title: '電気通信設備の設計、施工',
       icon: 'Drill',
       mainImage: Simage05,
       description: 'Electrical & communication installation',
       images: [Simage05],
     },
     {
-      title: '保守管理',
+      title: '公害監視設備の設計、製造、保守',
       icon: 'BookKey',
       mainImage: Simage06,
       description: 'Maintenance of equipment and monitoring systems',
@@ -70,7 +70,7 @@ export type Service = {
       images: [Simage07],
     },
     {
-      title: '建築物、工作物 石綿含有事前調査',
+      title: '建築物、工作物　石綿含有事前調査、施工',
       icon: 'HousePlug',
       mainImage: Simage08,
       description: 'Asbestos content survey for buildings',
