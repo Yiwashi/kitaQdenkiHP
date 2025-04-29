@@ -3,6 +3,8 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import MainCompany from "./components/main"
 import { Phone, MapPin } from "lucide-react"
 
+import {banks,client,history,contractor,permission,qualification} from './../../data/company'
+
 
 export default function CompanyPage() {
   return (
@@ -50,17 +52,7 @@ export default function CompanyPage() {
               <span>(TEL)093-953-9337:(FAX)093-953-9376</span>
             </p>
            
-                  <div className="w-full  bg-gray-100 rounded-md flex items-center justify-center">
-                        <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6628.199029496838!2d130.8623307764477!3d33.83554417323934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543c6db00cd394f%3A0x4edffa16866d8b3f!2z44CSODAyLTA5Nzkg56aP5bKh55yM5YyX5Lmd5bee5biC5bCP5YCJ5Y2X5Yy65b6z5Yqb5paw55S677yS5LiB55uu77yR77yY4oiS77yS77yTIOW3neWOn-WAieW6q-S6i-WLmeaJgA!5e0!3m2!1sja!2sjp!4v1744484827067!5m2!1sja!2sjp"
-                        width="100%"
-                        height="500"
-                        style={{ border: 0 }}
-                        allowFullScreen
-                        loading="lazy"
-                        referrerPolicy="no-referrer-when-downgrade"
-                        ></iframe>
-                  </div> <p className="text-sm text-gray-500">北九州モノレール 守恒駅 から 徒歩15分</p>
+
                     </TableCell>
                   </TableRow>
                   <TableRow>
@@ -77,49 +69,132 @@ export default function CompanyPage() {
                   </TableRow>
                   <TableRow>
                     <TableCell className="font-medium">主要取引銀行</TableCell>
-                    <TableCell>福岡銀行　戸畑支店、福岡ひびき信用金庫　北方支店</TableCell>
+                    <div className="flex flex-col space-y-2">
+                      {banks.map((bank, index) => (
+                        <span key={index}>{bank}</span>
+                      ))}
+                    </div>
                   </TableRow>
+
+
                 </TableBody>
               </Table>
             </CardContent>
           </Card>
 
-          <Card>
+          <Card className="mb-10">
             <CardContent className="p-6">
-              <h2 className="text-3xl font-bold mb-6 text-red-600 border-b pb-2">主要取引先（敬称略）</h2>
+              <h2 className="text-3xl font-bold mb-6 text-red-600 border-b pb-2">
+                工場所在地MAP
+              </h2>
+
+              <div className="w-full  bg-gray-100 rounded-md flex items-center justify-center">
+                        <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6628.199029496838!2d130.8623307764477!3d33.83554417323934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543c6db00cd394f%3A0x4edffa16866d8b3f!2z44CSODAyLTA5Nzkg56aP5bKh55yM5YyX5Lmd5bee5biC5bCP5YCJ5Y2X5Yy65b6z5Yqb5paw55S677yS5LiB55uu77yR77yY4oiS77yS77yTIOW3neWOn-WAieW6q-S6i-WLmeaJgA!5e0!3m2!1sja!2sjp!4v1744484827067!5m2!1sja!2sjp"
+                        width="100%"
+                        height="500"
+                        style={{ border: 0 }}
+                        allowFullScreen
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        ></iframe>
+              </div> <p className="text-sm text-gray-500">北九州モノレール 守恒駅 から 徒歩15分</p>
+
+            </CardContent>
+          </Card>
+
+          <Card className="mb-10">
+            <CardContent className="p-6">
+              <h2 className="text-3xl font-bold mb-6 text-red-600 border-b pb-2">
+                主要取引先（敬称略）
+              </h2>
               <Table className="text-xl">
                 <TableHeader>
                   <TableRow>
                     <TableHead>企業名</TableHead>
-                    
                   </TableRow>
                 </TableHeader>
                 <TableBody className="text-xl">
-                  <TableRow>
-                    <TableCell>・川重商事　　　　　　　　株式会社</TableCell>                   
-                  </TableRow>
-                  <TableRow>
-                    <TableCell>・イマ・ライフ・ジャパン　株式会社</TableCell>                    
-                  </TableRow>
-                  <TableRow>
-                    <TableCell>・日本ディクス　　　　　　株式会社</TableCell>                  
-                  </TableRow>
-                  <TableRow>
-                    <TableCell>・桜木理化学機械　　　　　株式会社</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell>・株式会社　ウェバートン</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell>・株式会社　ピーエムティー</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell>・株式会社　三松</TableCell>
-                  </TableRow>
+                  {client.map((item, index) => (
+                    <TableRow key={index}>
+                      <TableCell>{item}</TableCell>
+                    </TableRow>
+                  ))}
                 </TableBody>
               </Table>
             </CardContent>
           </Card>
+
+          <Card className="mb-10">
+            <CardContent className="p-6">
+              <h2 className="text-3xl font-bold mb-6 text-red-600 border-b pb-2">
+                会社沿革
+              </h2>
+              <Table className="text-xl">
+                <TableBody className="text-xl">
+                  {history.map((item, index) => (
+                    <TableRow key={index}>
+                      <TableCell>{item}</TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            </CardContent>
+          </Card>
+
+          <Card className="mb-10">
+            <CardContent className="p-6">
+              <h2 className="text-3xl font-bold mb-6 text-red-600 border-b pb-2">
+                登録電気工事業者
+              </h2>
+              <Table className="text-xl">
+                <TableBody className="text-xl">
+                  {contractor.map((item, index) => (
+                    <TableRow key={index}>
+                      <TableCell>{item}</TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            </CardContent>
+          </Card>
+
+          <Card className="mb-10">
+            <CardContent className="p-6">
+              <h2 className="text-3xl font-bold mb-6 text-red-600 border-b pb-2">
+              建設業の許可
+              </h2>
+              <Table className="text-xl">
+                <TableBody className="text-xl">
+                  {permission.map((item, index) => (
+                    <TableRow key={index}>
+                      <TableCell>{item}</TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            </CardContent>
+          </Card>
+
+          <Card className="mb-10">
+            <CardContent className="p-6">
+              <h2 className="text-3xl font-bold mb-6 text-red-600 border-b pb-2">
+              資格者一覧
+              </h2>
+              <Table className="text-xl">
+                <TableBody className="text-xl">
+                  {qualification.map((item, index) => (
+                    <TableRow key={index}>
+                      <TableCell>{item}</TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            </CardContent>
+          </Card>
+
+
+
         </div>
       </section>
     </div>
