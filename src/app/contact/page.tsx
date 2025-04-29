@@ -35,7 +35,7 @@ export default function ContactPage() {
               <div>
                 <h3 className="text-2xl font-bold mb-2">お電話でのお問い合わせ(工場)</h3>
                 <a href="tel:0938823025" className="text-blue-600 underline text-lg">
-                  093-882-3025
+                  093-953-9337
                 </a>
               </div>
             </div>
