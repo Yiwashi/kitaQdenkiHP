@@ -1,7 +1,6 @@
 import Link from "next/link"
-
 import { Button } from "@/components/ui/button"
-import { ArrowRight,  PenToolIcon as Tool, Settings, Users, Phone } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 
 
 export default function CareerHome() {

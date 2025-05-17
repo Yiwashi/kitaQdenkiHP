@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Mail, Phone, MapPin } from "lucide-react"
+import {  Phone, MapPin } from "lucide-react"
 
 export default function Footer() {
   return (
@@ -38,14 +38,14 @@ export default function Footer() {
         <div className="md:col-span-2 lg:col-span-2">
           <h3 className="text-xl font-bold mb-4 text-red-500">事業内容</h3>
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
-            <li>配電盤の製造、修理及び工事施工</li>
+            <li>各種製造機器の設計、製造、保守</li>
+            <li>制御盤、配電盤の設計、制作、施工、修理</li>
             <li>ユニット配線及びケーブル製作</li>
-            <li>各種製造機器の設計及び製造</li>
-            <li>電気設備工事</li>
-            <li>通信設備工事</li>
-            <li>各種製造機器、公害監視計の保守、管理</li>
+            <li>電気設備の設計、施工</li>
+            <li>電気通信設備の設計、施工</li>
+            <li>公害監視設備の設計、製造、保守</li>
             <li>半導体関連の精密加工部品製作</li>
-            <li>建築物、工作物 石綿含有事前調査</li>
+            <li>建築物、工作物、石綿含有事前調査、施工</li>
           </ul>
         </div>
 
