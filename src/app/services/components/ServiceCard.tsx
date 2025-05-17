@@ -13,7 +13,7 @@ type Props = {
   service: Service;
 };
 
-const iconComponents: { [key: string]: React.ComponentType<any> } = {
+const iconComponents: {[key: string]: React.FC<React.SVGProps<SVGSVGElement>>  } = {
   CircuitBoard: CircuitBoard,
   Cable: Cable,
   Wrench: Wrench,
