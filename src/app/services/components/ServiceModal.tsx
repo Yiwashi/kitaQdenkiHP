@@ -10,9 +10,10 @@ type Props = {
   onClose: () => void
   title: string
   images: StaticImageData[]
+  pdfs?: string[]
 }
 
-export default function ServiceModal({ isOpen, onClose, title, images }: Props) {
+export default function ServiceModal({ isOpen, onClose, title, images,pdfs }: Props) {
   const [currentIndex, setCurrentIndex] = useState(0)
 
   // 自動スライド（3秒ごと）
@@ -70,11 +71,31 @@ export default function ServiceModal({ isOpen, onClose, title, images }: Props) 
     ))}
   </div>
 
+    {pdfs && pdfs.length > 0 && (
+  <div className="text-center mb-2 space-y-1">
+    {pdfs.map((pdf, index) => (
+      <div key={index}>
+        <a
+          href={pdf}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 text-sm hover:underline"
+        >
+          PDF{pdfs.length > 1 ? ` ${index + 1}` : ''}を開く
+        </a>
+      </div>
+    ))}
+  </div>
+)}
+
+  
+
   <div className="text-center">
     <button onClick={onClose} className="text-red-600 text-sm hover:underline">
       閉じる
     </button>
   </div>
+  
 </Modal>
 
 
