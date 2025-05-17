@@ -11,7 +11,7 @@ export default function CompanyPage() {
     <div className="w-full">
       <MainCompany/>
       <div className="w-full ">
-      <div className=" m-12">
+      <div className=" mt-12">
       <h2 className="text-3xl font-bold flex flex-col items-center text-red-600">About us</h2>
 
       <section className=" flex flex-col justify-center  items-center py-16 md:py-24">

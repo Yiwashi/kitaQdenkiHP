@@ -38,8 +38,8 @@ export default function CompanyHome() {
 
   return (
     <div className="w-full bg-gray-300 text-white p-16 md:py-24">
-      <div className="container px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <div className="flex  px-4 md:px-6 items-center justify-center m-12 md:mt-1">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-cente">
           {/* 左側テキスト */}
           <div className="space-y-4">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-red-500">信頼と実績</h2>

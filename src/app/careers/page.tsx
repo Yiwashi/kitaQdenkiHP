@@ -10,13 +10,13 @@ export default function CareersPage() {
     <>
       <Maincareer />
 
-      <div className="w-full ">
-        <div className=" m-12">
+      <div className="mt-12 w-full ">
+        <div className="m-0 md:m-12">
 
       <h2 className="text-3xl font-bold mb-10 flex flex-col items-center text-red-600">Job Openings</h2>
 
 
-      <Card className="m-12 ">
+      <Card className="">
             <CardContent className="p-6">
               <div className="flex items-center mb-4">
                 <Briefcase className="h-6 w-6 text-red-600 mr-2" />
@@ -24,8 +24,8 @@ export default function CareersPage() {
               </div>
               <table className="w-full text-left text-gray-700">
                 <tbody>
-                  <tr><th className="font-semibold w-40 py-2 align-top">仕事内容</th>
-                  <td>
+                  <tr><th className="font-semibold py-2 md:align-top align-baseline">仕事内容</th>
+                  <td  className="md:align-top align-baseline">
                   <p>電気工事（設備電機工事 生産機器内電気工事）</p>
                   <p>電気通信工事 （ＬＡＮ工事 電話工事）</p>
                   <p>生産設備内 電気計装工事</p>
@@ -34,7 +34,7 @@ export default function CareersPage() {
                   <p>半導体関連の精密加工部品製作</p>
                   <p>ユニット配線及びケーブル制作</p>
                   </td></tr>
-                  <tr><th className="font-semibold py-2 align-top">雇用形態</th><td>正社員</td></tr>
+                  <tr><th className="font-semibold py-2 md:align-top align-baseline">雇用形態</th><td className="md:align-top align-baseline">正社員</td></tr>
                   <tr><th className="font-semibold py-2 align-top">就業場所</th><td>工場</td></tr>
                   <tr><th className="font-semibold py-2 align-top">年齢制限</th><td>あり（44歳以下）</td></tr>
                   <tr><th className="font-semibold py-2 align-top">賃金・手当</th><td>月額(a+b)20万円〜40万円</td></tr>

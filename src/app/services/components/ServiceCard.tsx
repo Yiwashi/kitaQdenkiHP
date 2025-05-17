@@ -53,6 +53,7 @@ export default function ServiceCard({ service }: Props) {
         onClose={closeModal}
         title={service.title}
         images={service.images}
+        pdfs={service.Pdf} 
       />
     </div>
   );
