@@ -38,7 +38,7 @@ export default function CompanyHome() {
 
   return (
     <div className="w-full bg-gray-300 text-white p-16 md:py-24">
-      <div className="container px-4 md:px-6">
+      <div className="flex container px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           {/* 左側テキスト */}
           <div className="space-y-4">
