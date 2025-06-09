@@ -21,10 +21,10 @@ export default function ContactPage() {
               <div>
                 <h3 className="text-2xl font-bold mb-2">メールでのお問い合わせ</h3>
                 <a
-                  href="mailto:info@kitakyushu-electric.co.jp?subject=お問い合わせ"
+                  href="mailto:kitaQdenki@gmail.com?subject=お問い合わせ"
                   className="text-blue-600 underline text-lg"
                 >
-                  info@kitakyushu-electric.co.jp
+                  kitaQdenki@gmail.com
                 </a>
               </div>
             </div>
