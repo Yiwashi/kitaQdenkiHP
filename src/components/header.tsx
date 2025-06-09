@@ -13,12 +13,12 @@ export default function Header() {
   }
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="p-3 sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="ml-5 container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
           <span className="text-2xl font-bold text-red-600">有限会社北九電機</span>
         </Link>
-        <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
+        <nav className="hidden md:flex  items-center space-x-6 text-sm font-medium">
           <Link href="/" className="transition-colors hover:text-red-600">
             ホーム
           </Link>
@@ -35,7 +35,7 @@ export default function Header() {
             お問い合わせ
           </Link>
         </nav>
-        <div className="md:hidden">
+        <div className="p-4 md:hidden">
           <Button variant="ghost" size="icon" onClick={toggleMenu}>
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </Button>
@@ -43,8 +43,8 @@ export default function Header() {
       </div>
       {isMenuOpen && (
         <div className="container md:hidden">
-          <nav className="flex flex-col space-y-4 py-4">
-            <Link href="/" className="text-lg font-medium transition-colors hover:text-red-600" onClick={toggleMenu}>
+          <nav className="ml-5 flex flex-col space-y-4 py-4">
+            <Link href="/" className="text-lg  font-medium transition-colors hover:text-red-600" onClick={toggleMenu}>
               ホーム
             </Link>
             <Link
