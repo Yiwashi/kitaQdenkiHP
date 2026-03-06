@@ -1,8 +1,7 @@
 import Link from "next/link"
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { ArrowRight, Briefcase, Section } from "lucide-react"
+import { ArrowRight, Briefcase } from "lucide-react"
 import Maincareer from "./components/main"
 
 export default function CareersPage() {

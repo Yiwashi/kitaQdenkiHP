@@ -6,14 +6,14 @@ import Image from 'next/image';
 import ServiceModal from './ServiceModal'; // ← ここを追加
 import {
   Cable, Drill, CircuitBoard, PencilRuler, Wrench,
-  BookKey, InspectionPanel, HousePlug
+  BookKey, InspectionPanel, HousePlug, LucideIcon
 } from 'lucide-react';
 
 type Props = {
   service: Service;
 };
 
-const iconComponents: { [key: string]: React.ComponentType<any> } = {
+const iconComponents: { [key: string]: LucideIcon } = {
   CircuitBoard: CircuitBoard,
   Cable: Cable,
   Wrench: Wrench,
