@@ -31,8 +31,8 @@ export const contractor = [
 ];
 
 export const permission = [
-  "電気工事業　・　電気通信工事業",
-  "現在　登録申請　準備中",
+  "建設業の許可　福岡県知事　許可　(般-7)　第　118209　号　電気工事業　電気通信工事業",
+  "登録電気工事業者　福岡県知事登録　第　20211012　号　一般電気工作物等",
 ];
 
 export const qualification = [
