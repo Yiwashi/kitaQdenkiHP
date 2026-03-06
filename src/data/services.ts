@@ -29,12 +29,12 @@ import Imge0404 from '@/public/04/04-04.jpg'
 import Imge0405 from '@/public/04/04-05.jpg'
 import Imge0406 from '@/public/04/04-06.jpg'
 
-import Imge0501 from '@/public/05/05-01.jpg'
-import Imge0502 from '@/public/05/05-02.jpg'
-import Imge0503 from '@/public/05/05-03.jpg'
-import Imge0504 from '@/public/05/05-04.jpg'
-import Imge0505 from '@/public/05/05-05.jpg'
-import Imge0506 from '@/public/05/05-06.jpg'
+// import Imge0501 from '@/public/05/05-01.jpg'
+// import Imge0502 from '@/public/05/05-02.jpg'
+// import Imge0503 from '@/public/05/05-03.jpg'
+// import Imge0504 from '@/public/05/05-04.jpg'
+// import Imge0505 from '@/public/05/05-05.jpg'
+// import Imge0506 from '@/public/05/05-06.jpg'
 
 import Imge0601 from '@/public/06/06-01.jpg'
 import Imge0602 from '@/public/06/06-02.jpg'
@@ -92,13 +92,13 @@ export type Service = {
       description: 'Design and construction of electrical equipment',
       images: [Imge0401, Imge0402,Imge0403, Imge0404,Imge0405, Imge0406],
     },
-    {
+    /**{
       title: '電気通信設備の設計、施工',
       icon: 'Drill',
       mainImage: Imge0501,
       description: 'Design and construction of telecommunications equipment',
       images: [Imge0501, Imge0502,Imge0503, Imge0504,Imge0505, Imge0506],
-    },
+    },**/
     {
       title: '公害監視設備の設計、製造、保守',
       icon: 'BookKey',
